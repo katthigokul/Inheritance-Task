@@ -1,5 +1,15 @@
 package com.stackroute.Task;
 
+
+/* Java program for Below Mentioned ScenarioInheritance ChallengeStart with a base class of a Vehicle, t
+hen create a Car class that inherits from thisbase class. F
+inally, create another class, a specific type of Car (Say Honda City) that inherits from the Car class.
+You should be able to hand steering, changing gears, and moving (speed in other words).
+You will want to decide where to put the appropriate state and behaviours (fields and methods).
+As mentioned above, changing gears, increasing/decreasing speed should be included.
+For specific type of vehicle you will want to add something specific for that type of car.*/
+
+//Solution
 //Base Class Vehicle
 
 
@@ -20,9 +30,9 @@ class Vehicle {
 //Inheritance from Vehicle class to Car class
 class Car extends Vehicle {
 
-    public void carSteering(String turn){
-        turn=turn;
-        System.out.println("Hand Steering:"+ turn);
+    public void carSteering(String turn) {
+        turn = turn;
+        System.out.println("Hand Steering:" + turn);
     }
 
     public void carModel(String model) {
@@ -46,10 +56,11 @@ class Car extends Vehicle {
 
 class HondaCity extends Car {
 
-    public void carSteering(String  turn){
-        turn=turn;
-        System.out.println("Hand Steering:"+ turn);
+    public void carSteering(String turn) {
+        turn = turn;
+        System.out.println("Hand Steering:" + turn);
     }
+
     public void carModel(String model) {
         model = model;
         System.out.println("Honda city Model: " + model);
